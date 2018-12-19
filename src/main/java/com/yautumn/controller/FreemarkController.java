@@ -14,17 +14,18 @@ import com.yautumn.entity.User;
 import com.yautumn.service.UserService;
 
 @Controller
-@RequestMapping("freemark")
+@RequestMapping("/freemarker")
 public class FreemarkController {
 	
 	@RequestMapping("/")
 	public String freemarkerIndex() {
+		System.out.println("classpath=========>"+System.getProperty("java.class.path"));
 		return "index";
 	}
 	
 	@Autowired
 	private UserService userService;
-	@RequestMapping("test/findlist")
+	@RequestMapping("findlist")
 	public ModelAndView findAllFreemark() {
 		ModelAndView modelAndView = new ModelAndView("find_list");
 		List<User> list = userService.getUserList();
@@ -36,7 +37,7 @@ public class FreemarkController {
 		modelAndView.addObject("list",list);
 		return modelAndView;
 	}
-	@RequestMapping("test/findone")
+	@RequestMapping("findone")
 	public ModelAndView findUserFreemark(@ModelAttribute("form") User userForm) {
 		int id = userForm.getId();
 		ModelAndView modelAndView = new ModelAndView("find_one");
@@ -44,7 +45,7 @@ public class FreemarkController {
 		modelAndView.addObject("user",user);
 		return modelAndView;
 	}
-	@RequestMapping("test/adduser")
+	@RequestMapping("adduser")
 	public ModelAndView addUserFreemark(@ModelAttribute("form")User userForm) {
 		String username = userForm.getUserName();
 		String password = userForm.getPassword();
