@@ -1,4 +1,4 @@
-package com.yautumn.entity;
+package com.yautumn.user.entity;
 
 import java.util.Date;
 

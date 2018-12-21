@@ -1,4 +1,4 @@
-package com.yautumn.service;
+package com.yautumn.user.service;
 
 import java.util.List;
 
@@ -7,8 +7,8 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Service;
 
-import com.yautumn.common.UserRowMapper;
-import com.yautumn.entity.User;
+import com.yautumn.user.common.UserRowMapper;
+import com.yautumn.user.entity.User;
 
 @Service
 public class UserService {

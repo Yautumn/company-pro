@@ -1,7 +1,8 @@
-package com.yautumn.common;
+package com.yautumn.user.common;
 
-import com.yautumn.entity.User;
 import org.springframework.jdbc.core.RowMapper;
+
+import com.yautumn.user.entity.User;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

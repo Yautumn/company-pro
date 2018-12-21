@@ -1,4 +1,4 @@
-package com.yautumn.controller;
+package com.yautumn.user.controller;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.yautumn.entity.User;
-import com.yautumn.service.UserService;
+import com.yautumn.user.entity.User;
+import com.yautumn.user.service.UserService;
 
 @Controller
 @RequestMapping("/freemarker")

@@ -7,7 +7,7 @@
 </head>
 <body>
 	<#list list as user>
-		<li> ${user.userName} ==== ${user.password}</li>
+		<li> ${user.bannerName} ==== ${user.bannerPicture}</li>
 	</#list>
 </body>
 </html>
